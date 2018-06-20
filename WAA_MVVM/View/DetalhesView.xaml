@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="WAA_MVVM.View.DetalhesView" Title="Detalhes" BackgroundImage="background.png">
+    <ContentPage.Content>
+
+    <Frame Style="{StaticResource FrameStyle}">
+        <StackLayout Padding="20" HorizontalOptions="CenterAndExpand">
+           <Label  Text="{Binding Nome}" TextColor="White" FontSize="18" HorizontalTextAlignment="Center" FontAttributes="Bold" />    
+           <Label Text="{Binding Cidade}" TextColor="White" FontAttributes="Bold" FontSize="18" HorizontalTextAlignment="Center" />    
+           <Label Text="{Binding Estado}" TextColor="White" FontAttributes="Bold" FontSize="18" HorizontalTextAlignment="Center" />    
+            </StackLayout>        
+    </Frame>
+    </ContentPage.Content>
+</ContentPage>

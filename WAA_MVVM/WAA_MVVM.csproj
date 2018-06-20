@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="3.0.0.482510" />
+    <PackageReference Include="MvvmLight" Version="5.4.1" />
+    <PackageReference Include="MvvmLightLibs" Version="5.4.1" />
+    <PackageReference Include="DLToolkit.Forms.Controls.FlowListView" Version="2.0.10" />
+    <PackageReference Include="Unity" Version="5.8.6" />
+    <PackageReference Include="sqlite-net-pcl" Version="1.4.118" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="View\" />
+    <Folder Include="Model\" />
+    <Folder Include="ViewModel\" />
+    <Folder Include="Services\" />
+    <Folder Include="Data\" />
+    <Folder Include="ViewModel\ViewModelLocator\" />
+    <Folder Include="Services\Navigation\" />
+    <Folder Include="Services\Messages\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="Model\MyPage.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Model\MyPage.xaml.cs" />
+  </ItemGroup>
+</Project>
